@@ -1,5 +1,6 @@
 module "prod-vpc" {
   source  = "terraform-aws-modules/vpc/aws"
+  version = "2.20.0"
 
   name = "prod-vpc"
   cidr = "10.0.0.0/16"
@@ -18,6 +19,7 @@ module "prod-vpc" {
 
 module "dev-vpc" {
   source  = "terraform-aws-modules/vpc/aws"
+  version = "2.20.0"
 
   name = "dev-vpc"
   cidr = "20.0.0.0/16"
@@ -36,6 +38,7 @@ module "dev-vpc" {
 
 module "mgmt-vpc" {
   source  = "terraform-aws-modules/vpc/aws"
+  version = "2.20.0"
 
   name = "mgmt-vpc"
   cidr = "30.0.0.0/16"
