@@ -9,21 +9,21 @@ module "prod_network" {
   subnets = [
       {
           subnet_name           = "subnet-01"
-          subnet_ip             = "10.0.101.0/24"
+          subnet_ip             = "10.0.1.0/24"
           subnet_region         = "us-central1"
           subnet_flow_logs      = "true"
           description           = "subnet-01"
       },
       {
           subnet_name           = "subnet-02"
-          subnet_ip             = "10.0.102.0/24"
+          subnet_ip             = "10.0.2.0/24"
           subnet_region         = "us-central1"
           subnet_flow_logs      = "true"
           description           = "subnet-02"
       },
       {
           subnet_name           = "subnet-03"
-          subnet_ip             = "10.0.103.0/24"
+          subnet_ip             = "10.0.101.0/24"
           subnet_region         = "us-central1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -31,7 +31,7 @@ module "prod_network" {
       },
       {
           subnet_name           = "subnet-04"
-          subnet_ip             = "10.0.104.0/24"
+          subnet_ip             = "10.0.102.0/24"
           subnet_region         = "us-central1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -39,7 +39,7 @@ module "prod_network" {
       },
       {
           subnet_name           = "subnet-05"
-          subnet_ip             = "10.0.105.0/24"
+          subnet_ip             = "10.0.201.0/24"
           subnet_region         = "us-central1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -47,7 +47,7 @@ module "prod_network" {
       },
       {
           subnet_name           = "subnet-06"
-          subnet_ip             = "10.0.106.0/24"
+          subnet_ip             = "10.0.202.0/24"
           subnet_region         = "us-central1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -68,21 +68,21 @@ module "dev_network" {
   subnets = [
       {
           subnet_name           = "subnet-01"
-          subnet_ip             = "10.0.101.0/24"
+          subnet_ip             = "20.0.1.0/24"
           subnet_region         = "us-east1"
           subnet_flow_logs      = "true"
           description           = "subnet-01"
       },
       {
           subnet_name           = "subnet-02"
-          subnet_ip             = "10.0.102.0/24"
+          subnet_ip             = "20.0.2.0/24"
           subnet_region         = "us-east1"
           subnet_flow_logs      = "true"
           description           = "subnet-02"
       },
       {
           subnet_name           = "subnet-03"
-          subnet_ip             = "10.0.103.0/24"
+          subnet_ip             = "20.0.101.0/24"
           subnet_region         = "us-east1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -90,7 +90,7 @@ module "dev_network" {
       },
       {
           subnet_name           = "subnet-04"
-          subnet_ip             = "10.0.104.0/24"
+          subnet_ip             = "20.0.102.0/24"
           subnet_region         = "us-east1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -98,7 +98,7 @@ module "dev_network" {
       },
       {
           subnet_name           = "subnet-05"
-          subnet_ip             = "10.0.105.0/24"
+          subnet_ip             = "20.0.201.0/24"
           subnet_region         = "us-east1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -106,7 +106,7 @@ module "dev_network" {
       },
       {
           subnet_name           = "subnet-06"
-          subnet_ip             = "10.0.106.0/24"
+          subnet_ip             = "20.0.202.0/24"
           subnet_region         = "us-east1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -127,21 +127,21 @@ module "mgmt_network" {
   subnets = [
       {
           subnet_name           = "subnet-01"
-          subnet_ip             = "10.0.101.0/24"
+          subnet_ip             = "30.0.1.0/24"
           subnet_region         = "us-west1"
           subnet_flow_logs      = "true"
           description           = "subnet-01"
       },
       {
           subnet_name           = "subnet-02"
-          subnet_ip             = "10.0.102.0/24"
+          subnet_ip             = "30.0.2.0/24"
           subnet_region         = "us-west1"
           subnet_flow_logs      = "true"
           description           = "subnet-02"
       },
       {
           subnet_name           = "subnet-03"
-          subnet_ip             = "10.0.103.0/24"
+          subnet_ip             = "30.0.101.0/24"
           subnet_region         = "us-west1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
@@ -149,27 +149,11 @@ module "mgmt_network" {
       },
       {
           subnet_name           = "subnet-04"
-          subnet_ip             = "10.0.104.0/24"
+          subnet_ip             = "30.0.102.0/24"
           subnet_region         = "us-west1"
           subnet_private_access = "true"
           subnet_flow_logs      = "true"
           description           = "subnet-04"
-      },
-      {
-          subnet_name           = "subnet-05"
-          subnet_ip             = "10.0.105.0/24"
-          subnet_region         = "us-west1"
-          subnet_private_access = "true"
-          subnet_flow_logs      = "true"
-          description           = "subnet-05"
-      },
-      {
-          subnet_name           = "subnet-06"
-          subnet_ip             = "10.0.106.0/24"
-          subnet_region         = "us-west1"
-          subnet_private_access = "true"
-          subnet_flow_logs      = "true"
-          description           = "subnet-06"
       },
   ]
 
