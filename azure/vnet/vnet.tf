@@ -1,5 +1,6 @@
 module "dev_vnet" {
   source              = "Azure/network/azurerm"
+  version             = "2.0.0"
 
   resource_group_name = "rgroup"
   location            = "centralus"
@@ -15,6 +16,7 @@ module "dev_vnet" {
 
 module "uat_vnet" {
   source              = "Azure/network/azurerm"
+  version             = "2.0.0"
 
   resource_group_name = "rgroup"
   location            = "centralus"
@@ -30,6 +32,7 @@ module "uat_vnet" {
 
 module "prod_vnet" {
   source              = "Azure/network/azurerm"
+  version             = "2.0.0"
 
   resource_group_name = "rgroup"
   location            = "centralus"
